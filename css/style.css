@@ -8,8 +8,34 @@ body {
 h2,p {
     color: aqua;
 }
+/* navbar */
+.navbar-fixed {
+    position: absolute;
+}
+nav {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.nav-wrapper li a:hover {
+    background: #3f4943;
+    transform: scale(1.3);
+    margin-top: -6px;
+}
+ul li a {
+    margin-right: 5px;
+}
 
 
+/* parallax pertama */
+.parallax-container {
+    height: 800px;
+}
+.parallax img { 
+    background-size: cover;
+    filter: grayscale(0.7);
+}
+
+/* untuk scroll path */
 section {
     padding: 50px;
 }
