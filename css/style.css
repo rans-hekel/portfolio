@@ -14,25 +14,71 @@ h2,p {
 }
 nav {
     background: rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+nav.sticky {
+    font-weight: normal;
+    color: rgba(10,60,150, 0.8);
+    text-shadow: 5px 4px 6px rgb(255, 0, 0);
 }
 
 .nav-wrapper li a:hover {
     background: #3f4943;
-    transform: scale(1.3);
-    margin-top: -6px;
+    transform: scale(1.2);
+    margin-top: -4px;
+    box-sizing: border-box;
 }
 ul li a {
     margin-right: 5px;
 }
 
 
+/* header */
+#perkenalan .container img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid rgb(0, 0, 0);
+    transform: scale(0);
+    opacity: 0;
+    transition: 1.5s;
+}
+#perkenalan .container p {
+    font-size: 30px;
+    color: white;
+    transform: translate(200px,0);
+    opacity: 0;
+    transition: 2s;
+}
+
+#perkenalan .container h3 {
+    transform: translate(-200px,0);
+    opacity: 0;
+    transition: 2s;
+}
+
+section .container {
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    text-shadow: 0 0 10px #fff, 
+                 0 0 20px #fff, 
+                 0 0 30px #fff, 
+                 0 0 40px #ff00de, 
+                 0 0 70px #ff00de, 
+                 0 0 80px #ff00de, 
+                 0 0 100px #ff00de, 
+                 0 0 150px #ff00de;
+    margin-top: -720px;
+} 
+
 /* parallax pertama */
 .parallax-container {
-    height: 800px;
+    height: 860px;
 }
 .parallax img { 
     background-size: cover;
-    filter: grayscale(0.7);
+    filter: grayscale(0.6);
 }
 
 /* untuk scroll path */
